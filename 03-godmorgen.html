@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=scri, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const d = new Date("December 30, 2021 24:00:00");
+      let hour = d.getHours();
+      let tekst;
+
+      if (d < 5) {
+        tekst = "Godmorgen";
+      } else if (d < 10) {
+        tekst = "Goddag";
+      } else if (d < 18) {
+        tekst = "Godaften";
+      } else if (d > 24) {
+        tekst = "Godaften";
+      } else {
+        tekst = "Godnat";
+      }
+
+      console.log(tekst);
+    </script>
+  </body>
+</html>

@@ -8,17 +8,14 @@
   </head>
   <body>
     <script>
-      const d = new Date("December 30, 2021 24:00:00");
-      let hour = d.getHours();
+      const tid = new Date().getHours();
       let tekst;
 
-      if (d < 5) {
+      if (tid >= 5 && tid < 10) {
         tekst = "Godmorgen";
-      } else if (d < 10) {
+      } else if (tid >= 10 && tid < 18) {
         tekst = "Goddag";
-      } else if (d < 18) {
-        tekst = "Godaften";
-      } else if (d > 24) {
+      } else if (tid >= 18 && tid < 24) {
         tekst = "Godaften";
       } else {
         tekst = "Godnat";
